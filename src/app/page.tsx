@@ -72,15 +72,15 @@ export default function Home() {
           Email:{" "}
           <a
             className="underline underline-offset-4"
-            href="mailto:you@example.com"
+            href="mailto:raoumar.dev@gmail.com"
           >
-            you@example.com
+            raoumar.dev@gmail.com
           </a>
         </p>
         <div className="mt-3 flex gap-3 text-sm">
           <a
             className="underline underline-offset-4"
-            href="https://github.com/your-handle"
+            href="https://github.com/UmerZer0"
             target="_blank"
             rel="noreferrer"
           >
@@ -88,7 +88,7 @@ export default function Home() {
           </a>
           <a
             className="underline underline-offset-4"
-            href="https://www.linkedin.com/in/your-handle/"
+            href="https://www.linkedin.com/in/rao-umar/"
             target="_blank"
             rel="noreferrer"
           >
@@ -96,7 +96,8 @@ export default function Home() {
           </a>
           <a
             className="underline underline-offset-4"
-            href="/Your_Name_Resume.pdf"
+            href=""
+            // TODO: Add resume
             target="_blank"
             rel="noreferrer"
           >

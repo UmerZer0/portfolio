@@ -14,16 +14,16 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
-    title: "Open Source Library",
+    title: "Best Lost Love Astrologer",
     description:
-      "A utility/package you built or contributed to. Mention downloads, stars, or adoption.",
-    href: "https://github.com/your-handle/your-repo",
-    tags: ["Node.js", "OSS"],
+      "Astrology specialist in the USA helping clients reignite lost love and love marriage guidance.",
+    href: "https://bestlostloveastrologer.com/",
+    tags: ["Laravel", "MySQL"],
   },
   {
-    title: "Case Study",
-    description:
-      "A client project or case study with measurable outcomes (performance, revenue, UX).",
-    tags: ["React", "Design", "Performance"],
+    title: "Basic Banking App",
+    description: "A responsive web application to mimic banking operations.",
+    href: "https://basic-banking-app-kuxou.mongodbstitch.com/",
+    tags: ["React.js", "Node.js", "MongoDB"],
   },
 ];
