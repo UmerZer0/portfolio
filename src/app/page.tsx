@@ -15,13 +15,13 @@ export default function Home() {
               with <span className="text-gradient">clarity and speed</span>.
             </h1>
             <p className="mt-4 text-foreground/80 max-w-xl">
-              I design and ship modern web apps. Currently focused on Next.js,
-              React 19, and edge-first architectures.
+              I am eager to apply my problem-solving abilities and collaborative
+              mindset in a growth-oriented environment
             </p>
             <div className="mt-6 flex gap-3">
               <a
                 href="#projects"
-                className="rounded-md btn-gradient px-4 py-2 text-sm"
+                className="rounded-md btn-gradient px-4 py-2 text-sm "
               >
                 View Projects
               </a>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="justify-self-center">
             <TiltImage
-              src="/wife.jpg"
+              src="/icon.jpg"
               alt="Hero"
               className="size-56 sm:size-64 md:size-72"
               maxRotateDeg={5}
@@ -50,8 +50,8 @@ export default function Home() {
         <p className="mt-3 text-sm sm:text-base text-foreground/80 max-w-3xl">
           I craft interactive experiences and scalable systems. I enjoy working
           across the stack, from product thinking and UX to APIs and
-          infrastructure. I’m currently focused on building with React 19,
-          Next.js 15, and edge-first architectures.
+          infrastructure. I’m currently focused on building with Next.js,
+          Typescript, Tailwind and edge-first architectures.
         </p>
       </section>
 
@@ -96,7 +96,7 @@ export default function Home() {
           </a>
           <a
             className="underline underline-offset-4"
-            href=""
+            href="CV - Rao Umar.pdf"
             // TODO: Add resume
             target="_blank"
             rel="noreferrer"
