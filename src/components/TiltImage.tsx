@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 type TiltImageProps = {
   src: string;
@@ -58,7 +59,9 @@ export default function TiltImage({
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
       className="relative isolate [perspective:1000px] animate-[float_6s_ease-in-out_infinite]"
-      style={{ transformStyle: "preserve-3d" as any }}
+      style={{
+        transformStyle: "preserve-3d" as React.CSSProperties["transformStyle"],
+      }}
     >
       <div
         aria-hidden
@@ -71,7 +74,7 @@ export default function TiltImage({
         }}
       />
 
-      <img
+      <Image
         src={src}
         alt={alt}
         className={`relative z-10 rounded-2xl object-cover border border-black/[.08] dark:border-white/[.12] shadow-lg will-change-transform transition-transform duration-300 ease-[cubic-bezier(.22,.61,.36,1)] ${
@@ -81,6 +84,8 @@ export default function TiltImage({
           transform,
           transformStyle: "preserve-3d",
         }}
+        width={1200}
+        height={800}
       />
     </div>
   );

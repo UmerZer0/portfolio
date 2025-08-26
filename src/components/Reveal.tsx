@@ -2,14 +2,31 @@
 
 import { PropsWithChildren, useEffect, useRef, useState } from "react";
 
+type AllowedTags =
+  | "div"
+  | "section"
+  | "span"
+  | "p"
+  | "header"
+  | "footer"
+  | "main"
+  | "article"
+  | "aside"
+  | "nav";
+
 type RevealProps = PropsWithChildren<{
-  as?: keyof JSX.IntrinsicElements;
+  as?: AllowedTags;
   className?: string;
   delayMs?: number;
 }>;
 
-export default function Reveal({ as = "div", className, delayMs = 0, children }: RevealProps) {
-  const ref = useRef<HTMLElement | null>(null);
+export default function Reveal({
+  as = "div",
+  className,
+  delayMs = 0,
+  children,
+}: RevealProps) {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -31,19 +48,18 @@ export default function Reveal({ as = "div", className, delayMs = 0, children }:
     return () => observer.disconnect();
   }, [delayMs]);
 
-  const Comp: any = as;
+  const Comp = as;
   return (
-    <Comp
-      ref={ref}
-      className={[
-        "reveal",
-        visible ? "reveal--visible" : "",
-        className ?? "",
-      ].join(" ")}
-    >
-      {children}
-    </Comp>
+    <div ref={ref}>
+      <Comp
+        className={[
+          "reveal",
+          visible ? "reveal--visible" : "",
+          className ?? "",
+        ].join(" ")}
+      >
+        {children}
+      </Comp>
+    </div>
   );
 }
-
-
